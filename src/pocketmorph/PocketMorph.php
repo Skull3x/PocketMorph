@@ -31,6 +31,7 @@ use pocketmorph\morph\MorphSlime;
 use pocketmorph\morph\MorphChicken;
 use pocketmorph\morph\MorphEnderman;
 use pocketmorph\morph\MorphCaveSpider;
+use pocketmorph\morph\MorphDragon;
 use pocketmorph\command\Commands;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
@@ -66,6 +67,7 @@ class PocketMorph extends PluginBase {
 	        Entity::registerEntity(MorphChicken::class, true);
 	        Entity::registerEntity(MorphEnderman::class, true);
         	Entity::registerEntity(MorphCaveSpider::class, true);
+		Entity::registerEntity(MorphDragon::class, true);
 
 		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
 	}
